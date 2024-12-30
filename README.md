@@ -29,7 +29,7 @@ The NBA All-Star Predictor aims to:
 
 The project utilizes two datasets:
 - **Training Dataset (`ASG_train.csv`)**: Historical player statistics and All-Star selection labels.
-- **Prediction Dataset (`ASG_to_predict.csv`)**: Current season statistics for prediction.
+- **Prediction Dataset (`ASG_to_predict.csv`)**: 2019-2020 season statistics to use for prediction.
 
 ---
 
@@ -107,7 +107,7 @@ Confusion matrices were plotted to evaluate true positives, false positives, tru
    - Precision: 76%
    - Recall: 85.59%
    - F1 Score: 80.51%
-2. **XGBoost**
+2. **XGBoost (highest performer)**
    - Accuracy: 97.43%
    - Precision: 75.38%
    - Recall: 88.29%
@@ -118,17 +118,10 @@ Confusion matrices were plotted to evaluate true positives, false positives, tru
    - Recall: 85.59%
    - F1 Score: 65.97%
 
-Correct Predictions:
+Correct Predictions using XGBoost:
 - Eastern Conference: 11 of 12 All-Stars.
 - Western Conference: 10 of 13 All-Stars.
 - Total: 21 of 25 All-Stars correctly predicted.
-
----
-
-## Future Work
-- Incorporate additional features (e.g., advanced defensive metrics).
-- Test with alternative algorithms (e.g., Neural Networks).
-- Enhance feature selection using automated methods.
 
 ---
 
